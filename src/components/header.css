@@ -1,0 +1,56 @@
+main {
+
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#logo {
+    width: 100px;
+}
+
+#search {
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: black;
+    background-color: azure;
+    font-size: 1em;
+    font-weight: bold;
+    text-indent: 20px;
+}
+
+#search-icon {
+    width: 65px;
+    height: 40px;
+    margin-left: -15px;
+    vertical-align: bottom;
+}
+
+.grid-container {
+    margin-left:1%;
+    display: grid;
+    grid-template-columns: min-content min-content auto;
+}
+
+#logoText {
+    display:inline-block;
+    width: 300px;
+    margin:auto;
+}
+
+.part1, .part2 {
+    margin-left: 20px;
+    margin-top: 20px;
+    width:auto;
+    height:auto;
+    margin:auto auto auto auto;
+}
+
+.part3 {
+    text-align:right;
+    padding-top: 45px;
+}
+
+header {
+    box-shadow: 10px 10px 20px #888888;
+}
