@@ -4,7 +4,7 @@ import './subreddits.css';
 import  logo  from './reddit-logo.svg'
 
 
-function Subreddits() {
+function Subreddits({ onSubredditChange }) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -34,13 +34,15 @@ function Subreddits() {
         <div id="subreddit-list">
             <aside>
                 <h2>Subreddits</h2>
-                <ul>
+                <ul className="sub-ul">
                     {data.map((sub) => (
-                        <li key={sub.display_name}>
-                            <button                               
+                        <li
+                            key={sub.display_name}
+                            onClick={() => onSubredditChange(sub.display_name)}>
+                            <button className="sub-button"                               
                                 type="button">
-                                <img alt= '' src={ sub.icon_img === "" ?  logo : sub.icon_img }></img>    
-                                <div class="display-name">{sub.display_name}</div> 
+                                <img className="sub-img" alt= '' src={ sub.icon_img === "" ?  logo : sub.icon_img }></img>    
+                                <div className="display-name">{sub.display_name}</div> 
                             </button>
                             
                         </li>

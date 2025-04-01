@@ -1,2 +1,27 @@
-body {
+
+.posts {
+    width: 70%;
+    padding:25px;
+}
+.post-img{
+    width:33%;
+    height:33%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:10%;
+}
+.card-container {
+    margin-left: 1%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.comment-icon{
+    width:25px;
+    height:25px;
+}
+.post {
+    box-shadow: 10px 10px 20px #888888;
+}
+.card-container {
+    box-shadow: 10px 10px 20px #888888;
 }
