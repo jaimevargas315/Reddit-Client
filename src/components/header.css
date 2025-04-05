@@ -12,11 +12,12 @@
     width: 500px;
     height: 30px;
     border-radius: 10px;
-    border-color: black;
-    background-color: azure;
+    background-color: #1e1e1e;
+    border-color:transparent;
     font-size: 1em;
     font-weight: bold;
     text-indent: 20px;
+    color:whitesmoke;
 }
 
 #search-icon {
@@ -52,5 +53,6 @@
 }
 
 header {
-    box-shadow: 10px 10px 20px #888888;
+    box-shadow: 10px 10px 20px #000000;
+    background-color: #3e3e42;
 }

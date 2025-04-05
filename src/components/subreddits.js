@@ -33,7 +33,7 @@ function Subreddits({ onSubredditChange }) {
     return (
         <div id="subreddit-list">
             <aside>
-                <h2>Subreddits</h2>
+                <h2 id="sub-h2">Subreddits</h2>
                 <ul className="sub-ul">
                     {data.map((sub) => (
                         <li

@@ -2,26 +2,43 @@
 .posts {
     width: 70%;
     padding:25px;
+    
 }
 .post-img{
-    width:33%;
-    height:33%;
+    width:contain;
+    display:block;
+    max-width:100%;
     margin-left:auto;
     margin-right:auto;
-    padding-left:10%;
 }
 .card-container {
     margin-left: 1%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 33% 50% 17%;
+    align-items:end;
+
 }
 .comment-icon{
-    width:25px;
-    height:25px;
+    min-width:25px;
+    width:50%;
+    height:50%;
+    float:left;
 }
 .post {
-    box-shadow: 10px 10px 20px #888888;
+    box-shadow: 10px 10px 20px #000000;
+    background-color: #2d2d30;
 }
-.card-container {
-    box-shadow: 10px 10px 20px #888888;
+.post-button{
+    width:min-content;
+    min-width:100px;
+    background-color:transparent;
+    border-color:transparent;
+    color:whitesmoke;
+    text-align:left;
+}
+.post-button:hover{
+    background-color:darkgray;
+}
+.post-date{
+    text-align:left;
 }

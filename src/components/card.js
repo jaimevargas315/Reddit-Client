@@ -34,12 +34,13 @@ function Card({ subreddit }) {
         <div className="posts">
             {data.map((post) => (
                 <div className="post">
-                    <h3>{post.title}</h3>
-                    <img className="post-img" alt="subreddit post" src={post.url_overridden_by_dest}></img>
+                    <h2>{post.title}</h2>
+                    <h3>{post.selftext}</h3>
+                    <img className="post-img" alt="" src={post.url_overridden_by_dest}></img>
                     <div className="card-container">
                         <text>Posted by: <a href={`http://www.reddit.com/u/${post.author}`}>{post.author}</a> </text>
-                        <text> {Date(post.created_utc).toLocaleString()}</text>
-                        <button> <img className="comment-icon" src={commentIcon} alt="comment-icon"></img> {post.num_comments} </button> 
+                        <text className="post-date"> {Date(post.created_utc).toLocaleString()}</text>
+                        <button class="post-button"> <img className="comment-icon" src={commentIcon} alt="comment-icon"></img> {post.num_comments} </button> 
                     </div>
                 </div>
             ))}

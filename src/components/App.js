@@ -13,6 +13,10 @@ function App() {
         setSelectedSubreddit(subreddit)
     }
 
+    useEffect(() => {
+        setSelectedSubreddit("all");
+    },[])
+
     return (
           <main>
             <Header />
