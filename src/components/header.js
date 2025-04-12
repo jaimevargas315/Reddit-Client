@@ -2,7 +2,12 @@ import logo from './reddit-logo.svg';
 import searchIcon from './search-icon.png'
 import './header.css'
 
- function Header(){
+function Header({ searchTerm, setSearchTerm }) {
+    const handleSearchChange = (event) => {
+        setSearchTerm(event.target.value)
+    };
+
+
     return (
         <main id="headermain">
             <header>
@@ -11,11 +16,11 @@ import './header.css'
                         <img style={{ display: 'inline-block' }} id="logo" src={logo} alt="Reddit Logo"></img>
                     </div>
                     <div class="part2">
-                        <h1 id="logoText">Reddit Simplified</h1>
+                        <h1 id="logoText">Reddit Lite</h1>
 
                     </div >
                     <div className="part3">
-                        <input id="search" type="text" placeholder="Search Reddit..."></input>
+                        <input value={searchTerm} onChange={handleSearchChange} id="search" type="text" placeholder="Search posts..."></input>
                         <input id="search-icon" type="image" src={searchIcon} alt="search button"></input>
                         <p>{ }</p>
                     </div>

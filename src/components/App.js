@@ -8,7 +8,7 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
     const [selectedSubreddit, setSelectedSubreddit] = useState(null);
-
+    const [searchTerm, setSearchTerm] = useState('');
     const handleSubredditChange = (subreddit) => {
         setSelectedSubreddit(subreddit)
     }
@@ -19,9 +19,9 @@ function App() {
 
     return (
           <main>
-            <Header />
+            <Header searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
             <Subreddits onSubredditChange={handleSubredditChange} />
-            <Card subreddit={selectedSubreddit} />
+            <Card subreddit={selectedSubreddit} searchTerm={searchTerm} />
         </main>
     );
 }

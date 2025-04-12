@@ -37,6 +37,7 @@
     display:inline-block;
     width: 300px;
     margin:auto;
+    text-align:left;
 }
 
 .part1, .part2 {

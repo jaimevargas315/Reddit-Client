@@ -22,11 +22,11 @@
     min-width:25px;
     width:50%;
     height:50%;
-    float:left;
 }
 .post {
     box-shadow: 10px 10px 20px #000000;
     background-color: #2d2d30;
+    margin-bottom:3%;
 }
 .post-button{
     width:min-content;
@@ -34,11 +34,34 @@
     background-color:transparent;
     border-color:transparent;
     color:whitesmoke;
-    text-align:left;
+    text-align:center;
 }
 .post-button:hover{
     background-color:darkgray;
 }
 .post-date{
     text-align:left;
+}
+.post-text {
+    width: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size:1.5em;
+}
+.link{
+    font-size:1.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:orangered;
+}
+.karma-icon{
+    max-width:50px;
+    min-width:25px;
+}
+.title-container {
+    display: grid;
+    grid-template-columns: 4% 96%;
+}
+.post-author {
+    text-decoration: none;
 }

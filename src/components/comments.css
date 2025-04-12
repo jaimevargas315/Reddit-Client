@@ -1,0 +1,43 @@
+
+.comment-author{
+    text-align:right;
+    padding-left:2%;
+    text-decoration:none;
+    
+}
+.comment-body{
+    padding-left:5%;
+    width:90%;
+    text-justify:auto;
+    grid-column-start:1;
+    grid-column-end:3;
+}
+.time-ago{
+    text-align:justify;
+    vertical-align:baseline;
+    padding-top:6%;
+}
+.comments{
+    width:100%;
+}
+.comment {
+    display: grid;
+    grid-template-columns: 85% 10% 5%;
+    width: 100%;
+    border-top:.25em solid black;
+}
+.replies {
+    float: right;
+    width: 97%;
+    box-shadow: 10px 10px 20px #000000;
+    border-left:.25em solid white;
+}
+.reply-button{
+    background-color:black;
+    float:left;
+    color:whitesmoke;
+    border-radius:5px;
+    border:none;
+    width:3%;
+    font-size:1.5em;
+}
